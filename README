@@ -1,0 +1,2 @@
+Creates Go structs from XML code
+Quick, dirty, no comments. Probably buggy as hell if used on data that doesn't look like mine.
