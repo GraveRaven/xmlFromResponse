@@ -66,7 +66,7 @@ func main() {
 	var currTag Filo
 	tags := make(map[string]Tag)
 
-	index := bytes.Index(body, []byte("<RESPONSE"))
+	index := bytes.Index(body, []byte("<RESPONSE")) //Hacky way to skip header
 	for pos := index; pos < len(body); pos++ {
 
 		if body[pos] == '>' {
